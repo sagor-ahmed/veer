@@ -1,0 +1,1085 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+
+    01. Theme default CSS	
+    02. Header CSS	
+    03. Slider CSS	
+    04. Post Slider CSS	
+    05. Meals CSS	
+    06. Saviez CSS	
+    07. Temoigna CSS	
+    08. Nauvelles CSS	
+    09. Flux CSS	
+    10. Footer CSS	
+    00. Responsive CSS	
+
+/*** 
+====================================================================
+	 Fonts
+====================================================================
+***/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+/*
+	font-family: 'Nunito', sans-serif;
+*/
+/*** 
+
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #848b8a;
+}
+
+.w-img img {
+    width: 100%;
+}
+
+a,
+.btn,
+button,
+span,
+p,
+input,
+select,
+textarea,
+li,
+img,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,
+button {
+    color: inherit;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+    border: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    color: #DD2225;
+    margin-top: 0px;
+    font-weight: 700;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #848b8a;
+    margin-bottom: 1.5rem;
+    line-height: 2.3rem;
+}
+
+*::-moz-selection {
+    background: #DD2225;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #DD2225;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #DD2225;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+
+*::-webkit-input-placeholder {
+    color: #000;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #000;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #000;
+    font-size: 14px;
+    opacity: 1;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow: hidden;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+.bg-small-white {
+    background-color: #ECF5E2;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.temoigna-bg {
+    background-color: #fff4de;
+}
+
+.bg-small-red {
+    background-color: #FF0F2B;
+}
+
+.flux-bg {
+    background-color: #E6F6F6;
+}
+
+/*--
+    - color
+-----------------------------------------*/
+.white-color {
+    color: #ffffff;
+}
+
+/* spacing margin and padding */
+.p-0 {
+    padding: 0px !important;
+}
+
+.pt-30 {
+    padding-top: 3rem;
+}
+
+.pb-30 {
+    padding-bottom: 3rem;
+}
+
+.pt-40 {
+    padding-top: 4rem;
+}
+
+.pb-40 {
+    padding-bottom: 4rem;
+}
+
+.pb-55 {
+    padding-bottom: 5.5rem;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mb-10 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-40 {
+    margin-bottom: 4rem;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mr-9 {
+    margin-right: 0.9rem;
+}
+
+.margin-right-10 {
+    margin-right: 10px !important;
+}
+
+.mr-40 {
+    margin-right: 4rem;
+}
+
+.margin-right-3 {
+    margin-right: 3px;
+}
+
+
+
+.ml-55 {
+    margin-left: 6.8rem;
+}
+
+.line-height-0 {
+    line-height: 5rem !important;
+}
+
+/*------- sticky -------- */
+.sticky {
+    background: rgb(0, 0, 0, 0.85) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+    width: 100%;
+    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.sticky .menu-area {
+    position: relative;
+    z-index: 99999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+}
+
+.sticky .menu-area ul li a {
+    color: #fff;
+}
+
+.sticky .topbar-area {
+    display: none;
+}
+
+.menu-area.menu-responsive {
+    background-color: #000;
+}
+
+/* ----- SCROLL TO TOP ----- */
+#scroll a {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    list-style-type: none;
+    background: #FE161D;
+    margin-right: 2rem;
+    border: 1px solid #056c5f;
+    z-index: 999;
+    border: none;
+}
+
+#scroll a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* ----- BUTTON ----- */
+.red-btn,
+.red-btn:link,
+.red-btn:visited {
+    background: rgb(254, 22, 35);
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+}
+
+.red-btn:hover {
+    background: transparent;
+    border-color: #868686;
+    color: #868686;
+}
+
+
+.white-btn,
+.white-btn:link,
+.white-btn:visited {
+    padding: 1px 10px 2px 10px;
+    background: transparent;
+    border: 2px solid #868686;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.white-btn:hover,
+.white-btn:active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.white-bt {
+    color: #fff;
+    border-color: #fff;
+}
+
+/*title*/
+.title {
+    font-size: 30px;
+    color: #DD2225;
+}
+
+.title a:hover {
+    color: #000;
+}
+
+/*-------------------------------------------*/
+/*  02. HEADER CSS START
+/*-------------------------------------------*/
+/*topbar*/
+.topbar-area {
+    padding: 13px 13px 15px 14px;
+}
+
+.topbar-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header-meta span {
+    font-size: 1.4rem;
+}
+
+.header-meta {
+    margin-bottom: 2.5rem;
+}
+
+.header-meta a {
+    margin-right: 1rem;
+    font-size: 1.4rem
+}
+
+.header-meta a:hover {
+    color: #000;
+}
+
+.header-meta a:first-child {
+    margin: 0;
+}
+
+.header-meta {
+    margin-bottom: 2.5rem;
+}
+
+/*logo*/
+.logo img {
+    height: 8rem;
+}
+
+/*menu*/
+.menu {
+    background: rgb(0, 0, 0, 0.85);
+}
+
+.menu-area {
+    position: static;
+    z-index: 99999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3rem 0;
+}
+
+.menu-area li {
+    padding: 0 2.3rem;
+}
+
+.menu-area li a {
+    display: block;
+    padding: 0px;
+    color: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-weight: 500;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.menu-area li a:hover {
+    color: #f9f9f9;
+}
+
+.menu-area ul li a,
+.menu-area ul li a:after,
+.menu-area ul li a:before {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.menu-area ul li a::before {
+    content: "";
+    background: red;
+    position: absolute;
+    top: 0;
+    height: .2rem;
+    width: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: transparent;
+}
+
+.menu-area ul li > a:hover:before {
+    width: 100%;
+}
+
+.menu {
+    background: rgb(0, 0, 0, 0.65);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+
+    /*------ responsive menu css --------*/
+    .menu-area.menu-responsive.p-relative ul li a {
+        color: #fff;
+    }
+
+    .menu-area.menu-responsive.p-relative ul li {
+        display: block !important;
+    }
+
+    .menu-area.menu-responsive.p-relative {
+        width: 100%;
+        clear: both;
+        overflow: hidden;
+        color: #000;
+    }
+
+    .menu-area.menu-responsive.p-relative ul li a::before {
+        display: none;
+    }
+
+    .mobile-nav-buttons {
+        float: right;
+        display: block;
+        margin-right: 30px !important;
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        color: #fff;
+        font-size: 4rem;
+        line-height: 58px;
+    }
+
+    .menu-toggle:hover,
+    .menu-toggle:focus {
+        color: #fff;
+    }
+
+    .nav-menu {
+        width: 100%;
+        background: #000;
+        padding: 0 5px;
+        padding-bottom: 12px;
+        margin: 102px 0 0 0;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-area.menu-responsive.p-relative {
+        padding-top: 0;
+        padding: 8px 0 0 0;
+        display: block !important;
+    }
+
+    .nav-menu li a {
+        padding: 11px 0;
+        font-size: 17px;
+        color: #bfbfbf;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-menu > ul > li:last-child > a {
+        border-bottom: none;
+    }
+
+    /*------ responsive menu end --------*/
+
+}
+
+
+/*apple thumb*/
+
+.apple-thumb {
+    width: 17rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 81%;
+    z-index: 999;
+}
+
+
+.thumb {
+    width: 10rem;
+    float: left;
+    margin-left: 30px;
+    padding: 0px 0 8px 0;
+}
+
+.apple-sticky {
+    width: 7rem;
+    float: left;
+    margin-left: 30px;
+    padding: 0px 0 8px 0;
+    position: absolute;
+    right: -86px;
+    top: 4px;
+    display: none;
+}
+
+.sticky .apple-sticky {
+    display: block;
+}
+
+/*-------------------------------------------*/
+/*  03. SLIDER CSS START
+/*-------------------------------------------*/
+
+.single-slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slider-height {
+    height: 620px;
+}
+
+.slider-active button.slick-next.slick-arrow {
+    left: auto !important;
+    right: 5rem !important;
+}
+
+.slider-text .title {
+    font-size: 36px;
+}
+
+.slider-active .slick-arrow:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #FE161D;
+}
+
+.slider-active .slick-arrow:hover i {
+    color: #fff;
+}
+
+.slider-active .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 9999999px;
+    z-index: 1;
+    color: #000;
+    font-size: 1.7rem;
+}
+
+/*-------------------------------------------*/
+/*  04. POST SLIDER CSS START
+/*-------------------------------------------*/
+.post-item h2 {
+    margin-bottom: 1.7rem;
+}
+
+.post-item p {
+    margin-bottom: 1.4rem;
+}
+
+.post-slider-active button.slick-arrow {
+    background: transparent;
+    color: #848b8a;
+    position: absolute;
+    top: 50%;
+    left: -5rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 2.9rem;
+}
+
+.post-slider-active button.slick-arrow i:hover {
+    color: #000;
+}
+
+.post-slider-active .slick-arrow:last-child {
+    left: auto;
+    right: -5rem;
+}
+
+.post-slider-active.slick-initialized.slick-slider {
+    margin-left: -10px;
+}
+
+/*-------------------------------------------*/
+/*  05. MEALS CSS START
+/*-------------------------------------------*/
+.meal-item {
+    overflow: hidden;
+}
+
+.meal-item.w-img.meal-mr {
+    position: relative;
+    right: 12px;
+}
+
+.meal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.meal-text h3 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.meal-text .white-btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.meal-item:hover .meal-item img {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.meal-item:hover img {
+    opacity: 0.3;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, -webkit-transform .5s;
+    transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.meal-photo img {
+    height: auto;
+    width: 100%;
+}
+
+.meal-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .3s;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.meal-item:hover .meal-text h3 {
+    color: #000;
+}
+
+.meal-item:hover .meal-text .white-btn {
+    background: #FE161D;
+    border-color: #FE161D;
+}
+
+/*-------------------------------------------*/
+/*  06. SAVIEZ CSS START
+/*-------------------------------------------*/
+.saviez-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.saviez-text p {
+    padding-right: 14rem;
+    line-height: 2.2rem;
+}
+
+/*-------------------------------------------*/
+/*  07. TEMOIGNA CSS START
+/*-------------------------------------------*/
+
+.temoigna-content {
+    padding: 7rem;
+    position: relative;
+}
+
+.temoigna-content h2 {
+    margin-bottom: 25px;
+}
+
+.temoigna-content span:not(:last-child) {
+    margin-bottom: 6.3rem;
+    display: block;
+}
+
+.temoigna-content span {
+    font-size: 1.7rem;
+}
+
+.temoigna-content span:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    background: red;
+    width: 6rem;
+    height: .3rem;
+    top: 58%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 1.8rem;
+}
+
+.temoigna-bg img {
+    width: 100%;
+}
+
+/*tamoigna slick slider css*/
+.temoigna-area .slick-arrow i {
+    position: absolute;
+    color: #000;
+    opacity: 1;
+    z-index: 9999;
+    font-size: 3rem;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.temoigna-area .slick-arrow i:hover {
+    color: #848b8a;
+}
+
+.temoigna-area .slick-arrow {
+    position: absolute;
+    top: 92%;
+    left: 24%;
+}
+
+/*-------------------------------------------*/
+/*  08. NAUVELLES CSS START
+/*-------------------------------------------*/
+.nauvelles-content {
+    padding: 2.9rem 3.5rem 3.5rem 3.5rem;
+    overflow: hidden;
+}
+
+.nauvelles-content h2 {
+    color: #585151;
+    margin-bottom: 1.3rem;
+    font-size: 2.6rem;
+    line-height: 1.1;
+}
+
+.nauvelles-content h2 a:hover {
+    color: #000;
+}
+
+.service-item-left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+}
+
+.service-item.service-item-right {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.service-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+}
+
+.s-c {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/*-------------------------------------------*/
+/*  09. FLUX CSS START
+/*-------------------------------------------*/
+.flux-item {
+    position: relative;
+}
+
+.flux-item:hover .flux-thumb img {
+    height: 110%;
+}
+
+.flux-thumb.w-img {
+    overflow: hidden;
+}
+
+/*flux slick slider */
+.flux .slick-arrow {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.flux .slick-arrow i {
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+.flux .slick-arrow i:hover {
+    color: #000;
+}
+
+.flux .slick-arrow:last-child {
+    right: 378px;
+    left: auto;
+}
+
+.flux-content {
+    opacity: 0;
+    visibility: visible;
+    display: block;
+    -webkit-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    padding: 1.5rem 2rem;
+    bottom: -4px;
+    font-size: 16px;
+}
+
+.flux-item:hover .flux-thumb {
+    position: relative;
+    top: -10.2rem;
+    bottom: 0;
+    overflow: auto;
+    margin-top: -2.6rem;
+    z-index: 9999999999;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.flux .slick-track {
+    position: relative;
+    top: 2.2rem;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flux-item:hover .flux-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flux-content p {
+    margin-bottom: 0.7rem;
+}
+
+/*-------------------------------------------*/
+/*  10. FOOTER CSS START
+/*-------------------------------------------*/
+.footer-top {
+    -webkit-box-shadow: 0 1px 1px rgba(202, 175, 175, 0.8);
+    box-shadow: 0 1px 6px rgb(202 175 175 / 80%);
+}
+
+.footer-contact span {
+    font-size: 1.5rem;
+}
+
+.footer-contact ul li {
+    display: block;
+}
+
+.footer-contact ul li a {
+    font-size: 1.5rem;
+}
+
+.footer-contact ul li a i {
+    margin-right: .5rem;
+}
+
+/*subscribe form*/
+.subscribe-form input {
+    width: 65%;
+    color: #7a8aa0;
+    font-size: 1.4rem;
+    border: 2px solid #7a8aa0;
+    padding: .4rem 1.3rem;
+    float: left;
+    margin-right: 1.2rem;
+    outline: none;
+}
+
+.subscribe-form span {
+    margin-bottom: .7rem;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.subscribe-form input::-webkit-input-placeholder {
+    color: #7a8aa0;
+    opacity: 1;
+}
+
+.subscribe-form input:-ms-input-placeholder {
+    color: #7a8aa0;
+    opacity: 1;
+}
+
+.subscribe-form input::placeholder {
+    color: #7a8aa0;
+    opacity: 1;
+}
+
+.subscribe-form input::focus {
+    outline: none;
+    border: none;
+}
+
+.subscribe-form button[type="submit"]:focus {
+    border: 2px solid transparent;
+    background: #fe161d;
+}
+
+/*copyright*/
+.copyright-text {
+    padding-top: .5rem;
+}

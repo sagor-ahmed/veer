@@ -1,0 +1,566 @@
+/*-------------------------------------------*/
+/*  05. RESPONSIVE CSS START
+/*-------------------------------------------*/
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 900px !important;
+    }
+}
+
+@media (max-width: 567px) {
+    .container {
+        width: auto !important;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 75%;
+    }
+
+    .container {
+        max-width: 1000px !important;
+    }
+
+    .subscribe-form input {
+        width: 63%;
+        font-size: 1.8rem;
+        padding: .1rem 1.3rem;
+        height: 29px;
+    }
+
+    .menu-area li {
+        padding: 0 1.9rem;
+    }
+
+    .nauvelles-content {
+        padding: 1.9rem 3rem 2.6rem 3.5rem;
+    }
+
+    .nauvelles-content h2 {
+        margin-bottom: .8rem;
+        font-size: 2.4rem;
+    }
+
+    .flux-item:hover .flux-thumb {
+        top: -9.6rem;
+    }
+
+}
+
+
+/* Big desktop :1200px-1500px */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .flux-content p {
+        font-size: 1.4rem;
+    }
+
+    .apple-thumb {
+        left: 87%;
+    }
+}
+
+/* Normal desktop :992px-1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .nauvelles-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .apple-thumb {
+        width: 12rem;
+        top: 3.5rem;
+        left: 88%;
+    }
+}
+
+@media (min-width:992px) {
+    .menu-none {
+        display: block;
+    }
+
+    .apple-thumb {
+        display: block;
+        z-index: 10000;
+    }
+
+    #header-sticky .menu-none {
+        display: block;
+    }
+
+    .menu-responsive {
+        display: none !important;
+    }
+
+    #header-sticky .menu-responsive {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:991px) {
+    .apple-thumb {
+        display: none;
+    }
+
+    .menu-none {
+        display: none !important;
+    }
+
+    #header-sticky .menu-area .menu-none {
+        display: none !important;
+    }
+
+    .menu-responsive {
+        display: block;
+    }
+
+    #header-sticky .menu-area .menu-responsive {
+        display: block !important;
+    }
+}
+
+
+
+/* Tablet desktop :768px-991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+
+    /*--*/
+    p {
+        font-size: 1.9rem;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .header-meta span {
+        font-size: 1.8rem;
+    }
+
+    .temoigna-content span {
+        font-size: 2rem;
+    }
+
+    .nauvelles-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .nauvelles-content {
+        padding: 1.6rem 3.5rem 2.4rem 3.5rem;
+    }
+
+    .white-btn,
+    .red-btn {
+        font-size: 1.8rem !important;
+    }
+
+    .temoigna-content {
+        padding: 4rem 7rem 7rem 7rem;
+    }
+
+    .meal-text h3 {
+        font-size: 2.9rem;
+        margin-bottom: 9px;
+    }
+
+    .subscribe-form input {
+        font-size: 1.8rem;
+    }
+
+    .subscribe-form span {
+        font-size: 1.8rem;
+    }
+
+    .footer-contact span {
+        font-size: 1.8rem;
+    }
+
+    .footer-contact ul li a {
+        font-size: 1.8rem;
+    }
+
+    /*--*/
+
+    .slider-text {
+        padding-top: 102px;
+        padding-left: 104px;
+    }
+
+    .saviez-text p {
+        padding-right: 10rem;
+    }
+
+    .temoigna-bg img {
+        display: none;
+    }
+
+    .temoigna-area .slick-arrow {
+        left: 50%;
+    }
+
+    .slider-active .slick-arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .post-slider-active button.slick-arrow {
+        left: 1rem;
+    }
+
+    .post-slider-active .slick-arrow:last-child {
+        right: 1rem;
+    }
+
+    .flux .slick-arrow:last-child {
+        right: 15px;
+    }
+
+    .flux .slick-arrow {
+        left: 30px;
+    }
+
+    .post-slider-active .slick-arrow:last-child {
+        right: -3rem;
+    }
+
+    .post-slider-active button.slick-arrow {
+        left: -3rem;
+    }
+
+    .apple-thumb {
+        width: 13rem;
+        top: 9.5rem;
+        left: 86%;
+    }
+
+}
+
+/* large mobile :767px. */
+@media (max-width: 767px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        margin-right: 22px;
+    }
+
+    .meal-item.w-img.meal-mr {
+        position: relative;
+        right: 0;
+    }
+
+    a.red-btn.mr-9.uppercase {
+        margin-right: 0.6rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+
+    .slider-height {
+        height: 550px;
+    }
+
+    .slider-active .slick-arrow {
+        display: none !important;
+    }
+
+    .saviez-text p {
+        padding-right: 0;
+    }
+
+    .saviez-thumb.mr-40 {
+        margin-right: 4rem;
+    }
+
+    .temoigna-bg img {
+        display: none;
+    }
+
+    .nauvelles-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .temoigna-area .slick-arrow {
+        left: 50%;
+    }
+
+    .nauvelles-thumb img {
+        width: 100%;
+    }
+
+    .service-item {
+        display: block;
+    }
+
+    .flux .slick-arrow:last-child {
+        right: 20px;
+    }
+
+    .flux .slick-arrow {
+        left: 35px;
+    }
+
+    .flux-item:hover .flux-thumb {
+        top: -8rem;
+    }
+
+    .flux-content {
+        width: 100%;
+    }
+
+    .footer-contact {
+        margin-bottom: 25px;
+    }
+
+    .subscribe-form input {
+        width: 50%;
+    }
+
+    .post-slider-active .slick-arrow:last-child {
+        left: auto;
+        right: -2rem;
+    }
+
+    .post-slider-active button.slick-arrow {
+        left: -2rem;
+    }
+
+    .post-slider-active.slick-initialized.slick-slider {
+        margin-left: -24px;
+    }
+
+    .post-slider-active .slick-arrow:last-child {
+        right: -2.4rem;
+    }
+
+    .post-slider-active button.slick-arrow {
+        left: -2.7rem;
+    }
+
+    .slider-text {
+        padding-top: 102px;
+    }
+
+    .thumb {
+        width: 9rem;
+    }
+
+    .menu-toggle {
+        line-height: 50px;
+    }
+
+    .nav-menu {
+        margin: 93px 0 0 0;
+    }
+
+    .temoigna-content {
+        padding: 4rem 7rem 7rem 7rem;
+    }
+
+    /*--*/
+    p {
+        font-size: 1.9rem;
+    }
+
+    .title {
+        font-size: 2.8rem;
+        line-height: 1.3;
+    }
+
+    .header-meta span {
+        font-size: 1.8rem;
+    }
+
+    .temoigna-content span {
+        font-size: 2rem;
+    }
+
+    .nauvelles-content h2 {
+        font-size: 2.6rem;
+        line-height: 1.2;
+    }
+
+    .nauvelles-content {
+        padding: 1.6rem 3.5rem 2.4rem 3.5rem;
+    }
+
+    .white-btn,
+    .red-btn {
+        font-size: 1.8rem !important;
+    }
+
+    .temoigna-content {
+        padding: 4rem 7rem 7rem 7rem;
+    }
+
+    .meal-text h3 {
+        font-size: 2.9rem;
+        margin-bottom: 9px;
+    }
+
+    .subscribe-form input {
+        font-size: 1.8rem;
+    }
+
+    .subscribe-form span {
+        font-size: 1.8rem;
+    }
+
+    .footer-contact span {
+        font-size: 1.8rem;
+    }
+
+    .footer-contact ul li a {
+        font-size: 1.8rem;
+    }
+
+    .meal-center-content.pt-30.pb-30.text-center {
+        padding: 30px;
+    }
+
+    /*--*/
+    .header-meta a {
+        font-size: 1.7rem;
+    }
+}
+
+/* small Mobile : 567px. */
+@media (max-width: 567px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .saviez-text .title {
+        margin-bottom: 1rem;
+    }
+
+    .flux-content p {
+        font-size: 1.8rem;
+    }
+
+    .post-item {
+        padding: 0;
+    }
+
+    .meal-item:first-child {
+        position: static;
+    }
+
+    .header-meta {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .topbar-area {
+        display: block;
+        text-align: center;
+    }
+
+    .saviez-area {
+        display: block;
+        text-align: center;
+    }
+
+    .saviez-thumb.mr-40 {
+        margin-bottom: 30px;
+    }
+
+    .meal-center-content h2 {
+        line-height: 1.4;
+    }
+
+    .flux-item:hover .flux-thumb {
+        top: -8.7rem;
+    }
+
+    .flux-content {
+        width: 100%;
+        padding: 13px 30px;
+    }
+
+    .post-slider .col-lg-12.col-md-10.col-sm-10.offset-md-1.offset-lg-0.offset-sm-1 {
+        margin: 0 auto;
+        max-width: 435px !important;
+    }
+
+    .post-slider-active.slick-initialized.slick-slider {
+        margin-left: -8px;
+    }
+
+    .post-slider-active .slick-arrow:last-child {
+        right: 0%;
+    }
+
+    .post-slider-active button.slick-arrow {
+        top: 50%;
+        left: 0%;
+    }
+
+    .post-item {
+        padding: 0 20px;
+    }
+
+    .saviez-text {
+        padding: 10px;
+    }
+
+    .meal-center-content.pt-30.pb-30.text-center {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 496px) {
+    .flux-item:hover .flux-thumb {
+        top: -10.8rem !important;
+    }
+
+    .section-title.ml-55 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-item {
+        padding: 0 8px;
+    }
+
+    .post-slider .col-lg-12.col-md-10.col-sm-10.offset-md-1.offset-lg-0.offset-sm-1 {
+        margin: 0 auto;
+        max-width: 265px !important;
+    }
+
+    .post-slider-active button.slick-arrow {
+        top: 50%;
+        left: -4%;
+    }
+
+    .post-slider-active .slick-arrow:last-child {
+        right: -4%;
+    }
+
+}
